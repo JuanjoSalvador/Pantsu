@@ -1,5 +1,3 @@
-from Pantsu import Torrents
+import Pantsu
 
-t = Torrents()
-
-print(t.search('koe no katachi', limit=None))
+print(Pantsu.search('koe no katachi', limit=None))
