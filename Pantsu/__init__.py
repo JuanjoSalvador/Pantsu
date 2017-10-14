@@ -10,6 +10,8 @@ import requests
 
 BASE_URL = "https://nyaa.pantsu.cat/api"
 
+# Torrents - GET
+
 def search(keyword, limit):
     request = requests.get("{}/search?q={}&limit={}".format(BASE_URL, keyword, limit))
 
@@ -19,6 +21,10 @@ def view(item_id):
     request = requests.get("/view/{}".format(BASE_URL, item_id))
 
     return request.json()
+
+# Torrents - POST
+
+# Users
 
 def login(username, password):
     login = requests.post("{}/login/".format(BASE_URL), data={'username': username, 'password': password})
