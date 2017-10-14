@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name = 'pantsu',
     packages = find_packages(exclude=['tests']),
-    version = '0.2',
+    version = '0.3',
     description = 'Pythons NyaaPantsu API wrapper',
     author = 'Juanjo Salvador',
     author_email = 'juanjosalvador@netc.eu',
